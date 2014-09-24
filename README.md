@@ -1,21 +1,18 @@
-# CakePHP Application Skeleton
+# CakePHP Sample app
 
-A skeleton for creating applications with [CakePHP](http://cakephp.org) 3.0.
+[ ] Create an app + composer install
+[ ] Configure it and launch it
+[ ] Add a database
+[ ] Create an initial table "Projects" + bake CRUD
++[ ] Use Migrations plugin
+    [ ] add timestamp behavior
+[ ] Create a new table "Tasks" (uuid, project_id, done date) + bake CRUD
+    [ ] add uuid rules for PK
+[ ] Refactor code to move things for admin (Projects CUD)
++[ ] Refactor code to use CRUD plugin
+[ ] Add a counter cache on Projects for opened tasks / total + virtual field percentage of done
+[ ] Create Kanban columns: task is in a Column, a Column is related to a project. Column has a maximum WIP + order
+[ ] Add a method to pull a task and log the start time in a column
+[ ] Generate awesome stats
 
-This is an unstable repository and should be treated as an alpha.
-
-## Installation
-
-1. Download [Composer](http://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist -s dev cakephp/app [app_name]`.
-
-If Composer is installed globally, run
-`composer create-project --prefer-dist -s dev cakephp/app [app_name]`
-
-You should now be able to visit the path to where you installed the app and see
-the setup traffic lights.
-
-## Configuration
-
-Read and edit `config/app.php` and setup the 'Datasources' and any other
-configuration relevant for your application.
+# Requirements
