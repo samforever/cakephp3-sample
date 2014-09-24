@@ -162,6 +162,8 @@ Request::addDetector('tablet', function($request) {
  * Plugin::load('DebugKit'); //Loads a single plugin named DebugKit
  *
  */
+Plugin::load('DebugKit', ['bootstrap' => true]);
+Plugin::load('Migrations');
 
 /**
  * Connect middleware/dispatcher filters.
