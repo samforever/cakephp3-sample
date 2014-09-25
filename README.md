@@ -15,6 +15,8 @@
 * [ ] Create Kanban columns: task is in a Column, a Column is related to a project. Column has a maximum WIP + order
 * [ ] Add a method to pull a task and log the start time in a column
 * [ ] Generate awesome stats
+* [ ] Authentification
+* [ ] Social Auth ;)
 
 # Requirements
 
