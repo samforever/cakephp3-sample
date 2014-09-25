@@ -6,11 +6,11 @@
 * [x] Create an initial table "Projects" + "Tasks" + bake CRUD
 * [x] + Use Migrations plugin
     * [x] add timestamp behavior
+* [x] Refactor code to move things for admin (Projects CUD)
 * [ ] Add a counter cache on Projects for opened tasks / total + virtual field percentage of done
 * [ ] Change "Tasks" feature
     * [ ] use uuid for PK
     * [ ] allow to mark as done / reset
-* [ ] Refactor code to move things for admin (Projects CUD)
 * [ ] + Refactor code to use CRUD plugin
 * [ ] Create Kanban columns: task is in a Column, a Column is related to a project. Column has a maximum WIP + order
 * [ ] Add a method to pull a task and log the start time in a column

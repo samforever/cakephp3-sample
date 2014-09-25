@@ -1,12 +1,12 @@
 <div class="actions columns large-2 medium-3">
 	<h3><?= __('Actions'); ?></h3>
 	<ul class="side-nav">
-		<li><?= $this->Html->link(__('Edit Project'), ['action' => 'edit', $project->id]) ?> </li>
-		<li><?= $this->Form->postLink(__('Delete Project'), ['action' => 'delete', $project->id], ['confirm' => __('Are you sure you want to delete # %s?', $project->id)]) ?> </li>
-		<li><?= $this->Html->link(__('List Projects'), ['action' => 'index']) ?> </li>
-		<li><?= $this->Html->link(__('New Project'), ['action' => 'add']) ?> </li>
-		<li><?= $this->Html->link(__('List Tasks'), ['controller' => 'Tasks', 'action' => 'index']) ?> </li>
-		<li><?= $this->Html->link(__('New Task'), ['controller' => 'Tasks', 'action' => 'add']) ?> </li>
+		<li><?= $this->Html->link(__('Edit Project'), ['action' => 'edit', $project->id, 'prefix' => 'admin']) ?> </li>
+		<li><?= $this->Form->postLink(__('Delete Project'), ['action' => 'delete', $project->id, 'prefix' => 'admin'], ['confirm' => __('Are you sure you want to delete # %s?', $project->id)]) ?> </li>
+		<li><?= $this->Html->link(__('List Projects'), ['action' => 'index', 'prefix' => false]) ?> </li>
+		<li><?= $this->Html->link(__('New Project'), ['action' => 'add', 'prefix' => 'admin']) ?> </li>
+		<li><?= $this->Html->link(__('List Tasks'), ['controller' => 'Tasks', 'action' => 'index', 'prefix' => false]) ?> </li>
+		<li><?= $this->Html->link(__('New Task'), ['controller' => 'Tasks', 'action' => 'add', 'prefix' => 'admin']) ?> </li>
 	</ul>
 </div>
 <div class="projects view large-10 medium-9 columns">

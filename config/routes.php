@@ -21,6 +21,13 @@
 use Cake\Core\Plugin;
 use Cake\Routing\Router;
 
+Router::prefix('admin', function($routes) {
+    // All routes here will be prefixed with `/admin`
+    // And have the prefix => admin route element added.
+    $routes->connect('/:controller', ['action' => 'index'], ['routeClass' => 'InflectedRoute']);
+    $routes->connect('/:controller/:action/*', [], ['routeClass' => 'InflectedRoute']);
+});
+
 Router::scope('/', function($routes) {
 /**
  * Here, we are connecting '/' (base path) to a controller called 'Pages',
